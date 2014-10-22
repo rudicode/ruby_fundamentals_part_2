@@ -10,4 +10,23 @@ def display_cohort cohort
   end
 end
 
+def expand_students_by students, percent
+
+  
+end
+
 display_cohort students
+
+puts "\n\nAdding 43 students to cohort 4\n\n"
+students[:cohort4] = 43
+
+puts "\n\nDisplaying cohort names\n\n"
+students.keys.each {|name| puts name}
+
+puts "\n\nStudents are increasing by 5%"
+students.each do |key,value|
+  students[key] = (students[key] * 1.05).to_i
+end
+
+display_cohort students
+
