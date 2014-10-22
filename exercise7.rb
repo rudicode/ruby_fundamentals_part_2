@@ -34,3 +34,10 @@ puts "\n\nDeleteing the 2nd cohort\n\n"
 students.delete :cohort2
 
 display_cohort students
+
+student_count = 0
+students.each_value do |value|
+  student_count += value
+end
+puts "\n\nThe total remaining students is #{student_count}"
+
