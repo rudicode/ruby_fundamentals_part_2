@@ -30,3 +30,7 @@ end
 
 display_cohort students
 
+puts "\n\nDeleteing the 2nd cohort\n\n"
+students.delete :cohort2
+
+display_cohort students
